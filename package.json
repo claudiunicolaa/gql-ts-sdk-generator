@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "get-graphql-schema": "^2.1.2",
+    "gql-generator": "^2.0.0",
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/typescript": "4.0.6",
+    "@graphql-codegen/typescript-graphql-request": "^6.2.0",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "get-graphql-schema": "get-graphql-schema $GRAPHQL_API_URL > schema.graphql",
+    "gqlg": "gqlg --schemaFilePath schema.graphql --destDirPath ./operations --depthLimit 5",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "generate": "npm run get-graphql-schema && npm run gqlg && npm run codegen"
+  }
+}
