@@ -22,3 +22,7 @@ npm run get-graphql-schema
 npm run gqlg
 npm run codegen
 ```
+
+## Example
+
+For testing purposes, start the example server (see [example/gql-server](./example/gql-server/README.md)).
