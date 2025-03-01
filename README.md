@@ -18,8 +18,11 @@ npm run generate
 
 Run the generate script (step by step):
 ```bash
+// 1. get/graphql-schema
 npm run get-graphql-schema
+// 2. gqlg-generaror
 npm run gqlg
+// 3. graphql-codegen
 npm run codegen
 ```
 
